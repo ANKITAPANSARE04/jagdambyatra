@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation, useParams  } from 'react-router-dom'
+import { Routes, Route, useLocation  } from 'react-router-dom'
 import { useEffect } from 'react'
 import GoogleTranslate from './components/layout/GoogleTranslate'
 import Navbar from './components/layout/Navbar'
