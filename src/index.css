@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Noto+Sans+Devanagari:wght@600;700&display=swap');
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@theme {
+  --color-saffron: #e8760f;
+  --color-ivory :#FDFBF9;
+  --color-saffron-dark: #c9620a;
+  --color-maroon: #7a1a2e;
+  --color-maroon-dark: #5e1424;
+  --color-cream: #fff8f0;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-marathi: 'Noto Sans Devanagari', sans-serif;
+}
+
+body {
+  @apply bg-ivory font-sans text-neutral-800;
+}
+
+@keyframes happy-customer-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.happy-customer-marquee {
+  animation: happy-customer-marquee 40s linear infinite;
+}
+
+.happy-customer-carousel:hover .happy-customer-marquee,
+.happy-customer-carousel:focus-within .happy-customer-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .happy-customer-marquee {
+    animation: none;
+  }
+}

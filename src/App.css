@@ -1,0 +1,31 @@
+/* ===== Hide Google Translate top banner & UI ===== */
+body > .skiptranslate,
+iframe.skiptranslate,
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* Google pushes the page down by 40px; cancel that */
+html, body {
+  top: 0 !important;
+  margin-top: 0 !important;
+  position: static !important;
+}
+
+/* Remove the yellow highlight on hover */
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+font { background: transparent !important; box-shadow: none !important; } 
